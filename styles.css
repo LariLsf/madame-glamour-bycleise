@@ -1,0 +1,346 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7; /* Cinza claro */
+    color: #333333; /* Cinza escuro */
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e5e5e5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 250px; /* Aumenta o tamanho do logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff0066; /* Rosa escuro */
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ff69b4; /* Rosa claro */
+    background-color: #f0f0f0;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+}
+
+.cta p {
+    margin-bottom: 1rem;
+    color: #ff0066;
+    font-size: 1.4rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 1.2rem;
+}
+
+.instagram-btn {
+    background-color: #E1306C;
+    color: white;
+}
+
+.instagram-btn:hover {
+    background-color: white;
+    color: #E1306C;
+    border-color: #E1306C;
+}
+
+.facebook-btn {
+    background-color: #3b5998;
+    color: white;
+}
+
+.facebook-btn:hover {
+    background-color: white;
+    color: #3b5998;
+    border-color: #3b5998;
+}
+
+#servicos {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#servicos h2 {
+    color: #ff0066;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+#servicos p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+#servicos ul {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+    padding: 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#servicos ul li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    padding-left: 1rem;
+    position: relative;
+}
+
+#servicos ul li::before {
+    content: '•';
+    color: #ff0066;
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+#curso {
+    padding: 4rem 2rem;
+    background-color: #fbe7eb; /* Rosa claro */
+    text-align: center;
+}
+
+#curso h2 {
+    color: #ff0066;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+#curso p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Estilo das Imagens do Curso e Sobre Nós */
+#curso img,
+.sobre-nos-images img {
+    width: 23%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 1%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+#curso img:hover,
+.sobre-nos-images img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+#sobre {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#sobre h2 {
+    color: #ff0066;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.sobre-nos-box {
+    background-color: #fbe7eb;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.sobre-nos-content {
+    margin-bottom: 2rem;
+}
+
+#sobre p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.logo-bottom {
+    width: 200px;
+    margin-top: 2rem;
+}
+
+footer {
+    padding: 4rem 2rem;
+    background-color: #333333; /* Cinza escuro */
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.whatsapp-contact {
+    text-align: center;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: white;
+    color: #25d366;
+    border-color: #25d366;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 2rem;
+}
+
+.footer-bottom nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-bottom nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .cta {
+        width: 90%;
+        padding: 1rem 2rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #curso img,
+    .sobre-nos-images img {
+        width: 48%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .cta p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+    }
+
+    #curso img,
+    .sobre-nos-images img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
